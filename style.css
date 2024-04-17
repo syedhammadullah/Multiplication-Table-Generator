@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+body {
+  font-family: sans-serif;
+  background-color: #ffe042;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #e71819;
+}
+h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: black;
+}
+.second {
+  display: flex;
+  justify-content: center;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background for the table */
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #505151;
+}
+
+tr:nth-child(odd) {
+  background-color: #ae8507;
+}
+
+.result {
+  /* Styling for result cells (where multiplication happens) */
+  font-size: 1.2em; /* Make result numbers slightly larger */
+  color: #333; /* Darker color for better contrast */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8em; /* Reduce font size for smaller screens */
+  }
+  th,
+  td {
+    padding: 8px; /* Adjust padding further for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  table {
+    font-size: 0.7em; /* Reduce font size even more for very small screens */
+  }
+  th,
+  td {
+    padding: 5px; /* Further reduce padding for very small screens */
+  }
+}
